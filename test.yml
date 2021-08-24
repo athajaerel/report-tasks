@@ -1,0 +1,53 @@
+---
+- name: test
+  gather_facts: no
+  hosts: all
+  tasks:
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  # Test skip
+  - name: test
+    when: False
+    debug:
+      msg: test
+
+  # Test fail
+  - name: test
+    failed_when: True
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+
+  - name: test
+    debug:
+      msg: test
+...
